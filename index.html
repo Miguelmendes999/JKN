@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JKN - Loja de Bots Discord</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#7c3aed">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="bg-elements">
+        <div class="bg-gradient"></div>
+        <div class="bg-mesh"></div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <div class="brand-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <span class="brand-text">JKN</span>
+                    <span class="brand-label">Store</span>
+                </div>
+                
+                <div class="nav-menu">
+                    <a href="#home" class="nav-link">Início</a>
+                    <a href="#products" class="nav-link">Produtos</a>
+                    <a href="#pricing" class="nav-link">Preços</a>
+                    <a href="#support" class="nav-link">Suporte</a>
+                </div>
+
+                <div class="nav-actions">
+                    <button id="loginBtn" class="login-btn glass-btn">
+                        <i class="fab fa-google"></i>
+                        <span>Entrar</span>
+                    </button>
+                    <a href="admin-dashboard.html" class="admin-link glass-btn" title="Admin">
+                        <i class="fas fa-cog"></i>
+                    </a>
+                </div>
+
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-sparkles"></i>
+                    <span>Novos bots toda semana</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    A melhor loja de 
+                    <span class="gradient-text">bots Discord</span>
+                    do Brasil
+                </h1>
+                
+                <p class="hero-description">
+                    Transforme seu servidor Discord com nossos bots premium. 
+                    Desenvolvidos com as melhores tecnologias e suporte 24/7.
+                </p>
+                
+                <div class="hero-actions">
+                    <button class="btn-primary glass-btn">
+                        <i class="fas fa-rocket"></i>
+                        <span>Explorar Produtos</span>
+                    </button>
+                    <button class="btn-secondary glass-btn">
+                        <i class="fab fa-discord"></i>
+                        <span>Discord</span>
+                    </button>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Bots vendidos</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Suporte</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Satisfação</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="dashboard-preview">
+                    <div class="dashboard-header">
+                        <div class="window-controls">
+                            <div class="control red"></div>
+                            <div class="control yellow"></div>
+                            <div class="control green"></div>
+                        </div>
+                        <div class="dashboard-title">JKN Dashboard</div>
+                    </div>
+                    <div class="dashboard-content">
+                        <div class="dashboard-card">
+                            <div class="card-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="card-info">
+                                <h4>MusicBot Pro</h4>
+                                <p>15 em estoque</p>
+                            </div>
+                            <div class="card-status online"></div>
+                        </div>
+                        <div class="dashboard-card">
+                            <div class="card-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="card-info">
+                                <h4>ModerBot</h4>
+                                <p>8 em estoque</p>
+                            </div>
+                            <div class="card-status online"></div>
+                        </div>
+                        <div class="dashboard-card">
+                            <div class="card-icon">
+                                <i class="fas fa-coins"></i>
+                            </div>
+                            <div class="card-info">
+                                <h4>EconomyBot</h4>
+                                <p>Esgotado</p>
+                            </div>
+                            <div class="card-status offline"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Por que escolher a JKN Store?</h2>
+                <p>Oferecemos a melhor experiência em bots Discord</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card glass-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <h3>Download Instantâneo</h3>
+                    <p>Receba seus bots imediatamente após a confirmação do pagamento</p>
+                </div>
+
+                <div class="feature-card glass-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-check"></i>
+                    </div>
+                    <h3>Qualidade Garantida</h3>
+                    <p>Todos os bots são testados e verificados antes da venda</p>
+                </div>
+
+                <div class="feature-card glass-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Suporte Premium</h3>
+                    <p>Atendimento especializado 24/7 via Discord</p>
+                </div>
+
+                <div class="feature-card glass-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Pagamento Rápido</h3>
+                    <p>PIX instantâneo com confirmação automática</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossos <span class="gradient-text">Produtos</span></h2>
+                <p>Escolha o bot perfeito para seu servidor</p>
+            </div>
+
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <div class="brand-info">
+                        <h4>JKN Store</h4>
+                        <p>A melhor loja de bots Discord do Brasil</p>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Produtos</h4>
+                    <a href="#products">Todos os Bots</a>
+                    <a href="#pricing">Preços</a>
+                    <a href="#features">Recursos</a>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Suporte</h4>
+                    <a href="#support">Central de Ajuda</a>
+                    <a href="#contact">Contato</a>
+                    <a href="#discord">Discord</a>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 JKN Store. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content glass-card">
+            <div class="modal-header">
+                <h3>Fazer Login</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Entre com sua conta Google para acessar a loja</p>
+                <button id="googleLoginBtn" class="google-btn glass-btn">
+                    <i class="fab fa-google"></i>
+                    <span>Continuar com Google</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="purchaseModal" class="modal">
+        <div class="modal-content glass-card purchase-modal">
+            <div class="modal-header">
+                <h3>Finalizar Compra</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body" id="purchaseContent">
+                <!-- Content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
